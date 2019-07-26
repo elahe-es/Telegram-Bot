@@ -7,6 +7,7 @@
     <title>Admin panel</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swag.css">
+    <link rel="stylesheet" href="telegram-bot.css">
 </head>
 <body>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#FFC0CB" ;>
@@ -26,26 +27,44 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#"></a>
                         </li>
+                        
                     </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">LogOut</button>
+
+                        <div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                              <div class="modal-header"><h4>Logout <i class="fa fa-lock"></i></h4></div>
+                              <div class="modal-body"><i class="fa fa-question-circle"></i> Are you sure you want to log-off?</div>
+                              <div class="modal-footer"><a href="javascript:;" class="btn btn-primary btn-block">Logout</a></div>
+                            </div>
+                          </div>
+                        </div></li>
+                      
+                    </ul>
+      
+                    
                     <span class="navbar-text">
         
                     </span>
                 </div>
             </nav>
-    
+    <br />
+    <br />
     <div class="container">
         <div class="row">
         
-          <div class="col-sm-5 col-md-7 col-lg-12">
-                <div class="card mb-5" style="max-width: 1400px;">
+          <div class="col-sm-4 col-md-6 col-lg-8">
+                <div class="card mb-5" style="max-width:500; height: 400px;">
                         <div class="row no-gutters">
                           <div class="col-md-3">
-                            <img src="download.jpg" class="card-img" alt="...">
+                            <img src="download.jpg" class="card-img" style="height: 300px ; width:350px";>
                           </div>
-                          <div class="col-md-6 ">
+                          <div class="col-md-6">
                             <div class="card-body">
                                     <div class="dropdown">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                               YogaPoses
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -61,10 +80,17 @@
                                           <br />
                                           <br />
                                           <br />
-                                          <div>
-                                              <a href="#"class="btn btn-outline-primary" class="button">Edit</a>
-                                              <a href="#" class="btn btn-outline-danger" class="button">remove</a>
-                                              <a href="#" class="btn btn-outline-success" class="button">Submit</a>
+                                          <div class="button">
+                                              <a href="#"class="btn btn-outline-primary" >Edit</a>
+                                              <br />
+                                              <br />
+                                              <a href="#" class="btn btn-outline-danger" >remove</a>
+                                              <br />
+                                              <br />
+                                              <a href="#" class="btn btn-outline-success" >Submit</a>
+                                              
+                                              
+                                          
 
 
 
@@ -78,33 +104,33 @@
                       </div>
             
           </div>
-          <table class="table">
+          <table class="table" class="table">
                 <thead class="thead-dark">
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Id</th>
-                    <th scope="col">first</th>
-                    <th scope="col">last</th>
+                    <th scope="col">TimetoJoin</th>
+                    <th scope="col">Gender</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                 </tbody>
               </table>
@@ -134,9 +160,11 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="js/tether.min.js"></script>
+<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="bootstrap.bundle.min.js"></script>
-<script src="bootstrap.bundle.js"></script>
+
+
+<script src="telegram-bot.js"></script>
 
 </body>
 </html>
